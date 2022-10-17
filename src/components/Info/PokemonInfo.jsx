@@ -19,7 +19,7 @@ export class PokemonInfo extends Component {
       this.setState({ status: 'pending' });
 
       setTimeout(() => {
-        fetch(`https:pokeapi.co/api/v2/pokemon/${this.props.pokemonName}`)
+        fetch(`https://pokeapi.co/api/v2/pokemon/${this.props.pokemonName}`)
           .then(response => {
             if (response.ok) {
               return response.json();
